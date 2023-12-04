@@ -43,11 +43,6 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account{" +
-                "number=" + number +
-                ", holder='" + holder + '\'' +
-                ", balance=" + balance +
-                ", withdrawLimit=" + withdrawLimit +
-                '}';
+        return String.format("New balance: %.2f", getBalance());
     }
 }
