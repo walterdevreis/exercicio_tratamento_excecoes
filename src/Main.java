@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         try{
-            Account account = new Account(1, "Client", 1000.0, 500.0);
+            Account account = new Account(1, "Client", 500.0, 300.0);
 
-            account.withdraw(2000.0);
+            account.withdraw(400.0);
 
             System.out.println(account);
         }
