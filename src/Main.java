@@ -1,4 +1,4 @@
-import model.DomainException.DomainException;
+import model.DomainException.BusinessException;
 import model.entities.Account;
 
 import java.util.Locale;
@@ -30,7 +30,7 @@ public class Main {
 
             System.out.println(account);
         }
-        catch (DomainException e){
+        catch (BusinessException e){
             System.out.println("Withdraw error: " + e.getMessage());
         }
         catch (RuntimeException e){

@@ -2,11 +2,11 @@ package model.DomainException;
 
 import java.io.Serial;
 
-public class DomainException extends RuntimeException{
+public class BusinessException extends RuntimeException{
     @Serial
     private static final long serialVersionUID = 1L;
 
-    public DomainException(String msg){
+    public BusinessException(String msg){
         super(msg);
     }
 }
